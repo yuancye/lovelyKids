@@ -1,0 +1,269 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 800;
+    font-style: cursive;
+  }
+  
+  header, footer {
+  width: 100%;
+  background-color: #4CAF50;
+  }
+  
+  nav {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #367C39;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 20px;
+  }
+  
+  p, button, ol {
+    color: #222;
+    font-family: 'Century Gothic', 'Helvetica', sans-serif;
+  }
+  
+  main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto;
+    width: 90%;
+  }
+  
+  #user-creator button {
+    margin-top: 20px;
+    margin-right: 50px;
+  }
+  
+  .error {
+    text-align: center;
+    color : rgb(239, 8, 8);
+  }
+  
+  .message {
+    text-align: center;
+    color : rgb(5, 186, 5);
+  }
+  
+  #about img {
+    max-width: 200px;
+    height: auto;
+    border-radius: 10%;
+    overflow: hidden;
+    border: rgb(243, 207, 4) solid 5px;
+    box-shadow: 0 0 10px rgb(204, 175, 12);
+  }
+  
+  #score-container img {
+    max-width: 50px;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  #icon-container, #events-container {
+    display: flex;
+    flex-wrap: wrap;
+    height: 200px;
+    min-width: 200px;
+    overflow-y: scroll;
+    width: 80%;
+    margin-top: 20px;
+    border: rgb(243, 207, 4) solid 5px;
+    box-shadow: 0 0 10px rgb(204, 175, 12);
+    border-radius: 15px;
+  }
+  
+  #icon-container img {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+  }
+  
+  .highlighted {
+    border: 2px solid rgb(233, 115, 6);
+    background-color: rgb(240, 163, 47);
+  }
+  
+  .hidden {
+    display: none !important;
+  }
+  
+  #users {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  #users img  {
+    width: 80px;
+    height: auto;
+    margin-top: 5px;
+  }
+  
+  #users div {
+    width: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border: rgb(243, 207, 4) solid 2px;
+    box-shadow: 0 0 5px rgb(204, 175, 12);
+  }
+  
+  img:hover {
+    background-color: blanchedalmond;
+  }
+  
+  #events-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  #events-container button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    border: 2px solid rgb(9, 9, 8);
+    height: 50px;
+  }
+  
+  #events-container button span {
+    margin-right: 5px;
+  }
+  
+  #update-star {
+    margin-top: 10px;
+  }
+  
+  #icon-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #rules-generator article {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  
+  #rules-generator article > div {
+    margin-right: 20px;
+  }
+  
+  #rules-generator article form {
+    border:black solid 2px;
+    min-width: 450px;
+    min-height: 100px;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: 20px;
+  }
+  
+  #rules-generator button {
+    width: 120px;
+    height: 40px;
+    display: block;
+    margin: 0 auto;
+    margin-right: 10px;
+  }
+  
+  #rules > div {
+    display: flex;
+  }
+  
+  #rules > div input {
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  #rules > div label:first-child input {
+    width: 350px;
+  }
+  
+  #rules > div label:last-child input {
+    width: 50px;
+  }
+  
+  #add-rules-to-user {
+    width: 300px;
+    display: flex;
+    flex-wrap: wrap
+  }
+  
+  #add-rules-to-user button {
+    margin: 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  a {
+    text-align: flex;
+    margin-top: 30px;
+    font-size: large;
+  }
+  
+  .button {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  
+  button {
+    background-color: white;
+    border-radius: 10px;
+    font-size: 12pt;
+    text-align: center;
+  }
+  
+  #update-stars {
+    margin-top: 20px;
+  }
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    text-align: end;
+    padding: 10px;
+    padding-right: 20px;
+    color: white;
+    flex-shrink: 0;
+  }

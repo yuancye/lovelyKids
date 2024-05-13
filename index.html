@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset='utf-8'/>
+    <title>Habits Helper for kids</title>
+    <link href='styles.css' rel='stylesheet'/>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+    <script src='index.js'></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#score-container">Stars</a></li>
+          <li><a href="#user-creator">Create User</a></li>
+          <li><a href="#rules-generator">Rule Generator</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#tips">Tips</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <p class="error hidden">some</p>
+      <p class="message hidden">message</p>
+      <section id="score-container" class="hidden">
+        <h1>Log Scores</h1>
+        <div class="error hidden">
+          <p>Please create User and Rules first. </p>
+          <a href="#user-creator">Create User</a>
+        </div>
+        <div id="users">
+        </div>
+        <fieldset id="events-container">
+          <legend>Click to choose Events</legend>
+        </fieldset>
+        <button id="update-stars">Update Stars</button>
+      </section>
+
+      <section id="user-creator" class="hidden">
+        <h1>Create User</h1>
+        <label>Nick Name: <input name="username" id="username" type="text"></label>
+        <fieldset id="icon-container">
+        </fieldset>
+        <button id="add-kid">Add kid</button>
+        <a href="#rules-generator">Rule Generator</a>
+      </section>
+      <section id="rules-generator" class="hidden">
+        <h1>Create Your Own Rules</h1>
+        <article>
+          <div>
+            <p>Add Rules to: </p>
+            <div class="button" id="add-rules-to-user">
+            </div>
+          </div>
+          <div>
+            <div class="button">
+              <button id="add-line">Add line</button>
+              <button id="remove-line">Remove line</button>
+              <button id="clear-all">Clear All</button>
+            </div>
+            <form id="rules">
+            </form>
+            <a href="#stars">Go To Stars</a>
+          </div>
+        </article>
+      </section>
+
+      <section id="about" class="hidden">
+        <!-- <img src="img/kids.jpg" alt="kids"> -->
+        <h1>Background Story</h1>
+        <p>Inspired by parental concerns, I observed a lack of
+          interest and discipline in my children's daily
+          routines—skipping bedtime and morning routines, untidy
+          rooms, procrastination, and an excessive focus on treats.</p>
+        <p>
+          In an effort to instill positive behaviors and foster
+          good habits, we introduced an 'Earn-Punishment' system
+          we affectionately call the 'Rule of Living.'
+        </p>
+        <p>
+          Our initial implementation of the 'Rule of Living'
+          showed promise in motivating our kids to adopt better
+          behaviors. However, the manual recording of earned stars
+          or deductions proved challenging to sustain. This led to
+          a decline in its effectiveness over time.
+        </p>
+        <p>
+          With the creation of this web application, we aim to
+          streamline the recording process, making it easier to
+          track and maintain consistency in rewarding positive
+          behaviors and addressing negative ones. Our hope is that
+          this digital tool will not only prolong the
+          effectiveness of the 'Rule of Living' but also
+          facilitate the formation of lasting, positive habits in
+          our children's lives."
+        </p>
+      </section>
+
+      <section id="tips" class="hidden">
+        <h1>Tips</h1>
+        <ol>
+          <li> Don't generate too much rules at first, around 5 - 10 is prefered</li>
+          <li>Make the rules that the kids can acturally finish it, but not too simple.</li>
+          <li>To be continued...</li>
+        </ol>
+      </section>
+    </main>
+    <footer>
+      &copy; 2024 lovelykids.com. All rights reserved.
+      <cite><a href="https://www.freepik.com/search">Icon by Freepik</a></cite>
+    </footer>
+  </body>
+</html>
