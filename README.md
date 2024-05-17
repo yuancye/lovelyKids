@@ -1,0 +1,5 @@
+# lovelyKids
+
+**npm install**
+
+**nodemon**
