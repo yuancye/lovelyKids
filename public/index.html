@@ -1,10 +1,21 @@
 <!DOCTYPE html>
+<!--
+  Name: Yuanchao Ye
+  Date: 05-12-2024
+  Section: AA/Kevin Wu
+
+  This is index.html page for the lovelykids web app.
+  This app is mainly used to record how much stars do
+  the kids has earned. User can create the username and
+  rules for the kids, so that to help the kids form a
+  good behavior.
+-->
 
 <html>
   <head>
-    <meta charset='utf-8'/>
-    <title>Habits Helper for kids</title>
-    <link href='styles.css' rel='stylesheet'/>
+    <meta charset='utf-8'>
+    <title>Lovely Kids</title>
+    <link href='styles.css' rel='stylesheet'>
     <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
     <script src='index.js'></script>
   </head>
@@ -16,15 +27,15 @@
           <li><a href="#user-creator">Create User</a></li>
           <li><a href="#rules-generator">Rule Generator</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#tips">Tips</a></li>
+          <li><a href="#tips">Instruction &amp; Tips</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <p class="error hidden">some</p>
-      <p class="message hidden">message</p>
+      <p class="error hidden"></p>
+      <p class="message hidden"></p>
       <section id="score-container" class="hidden">
-        <h1>Log Scores</h1>
+        <h1>Log Stars</h1>
         <div class="error hidden">
           <p>Please create User and Rules first. </p>
           <a href="#user-creator">Create User</a>
@@ -42,9 +53,11 @@
         <label>Nick Name: <input name="username" id="username" type="text"></label>
         <fieldset id="icon-container">
         </fieldset>
+        <cite><a href="https://www.freepik.com/search">Icon by Freepik</a></cite>
         <button id="add-kid">Add kid</button>
         <a href="#rules-generator">Rule Generator</a>
       </section>
+
       <section id="rules-generator" class="hidden">
         <h1>Create Your Own Rules</h1>
         <article>
@@ -98,6 +111,23 @@
       </section>
 
       <section id="tips" class="hidden">
+        <h1>Instructions</h1>
+        <ol>
+          <li>
+            Create user first - username and an icon image to
+            represent the kid.
+          </li>
+          <li>
+            Generate some rules for the kid, so that they can
+            follow. <br>
+            -- You can use same rules or different rules for
+            different kid.
+          </li>
+          <li>
+            log scores for each star the kid has earned.
+          </li>
+
+        </ol>
         <h1>Tips</h1>
         <ol>
           <li> Don't generate too much rules at first, around 5 - 10 is prefered</li>
@@ -107,8 +137,7 @@
       </section>
     </main>
     <footer>
-      &copy; 2024 lovelykids.com. All rights reserved.
-      <cite><a href="https://www.freepik.com/search">Icon by Freepik</a></cite>
+      &copy; 2024 lovelykids.com. All rights reserved. GNU General Public License.
     </footer>
   </body>
 </html>
